@@ -18,8 +18,8 @@ Table of Contents
 Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/taskify.git
-   cd taskify
+   git clone https://github.com/kennedyowusu/taskify_api
+   cd taskify_api
    ```
 2. Install dependencies:
    ```bash
@@ -124,4 +124,4 @@ Testing
 License
 This project is open-source and available under the [MIT License](LICENSE).
 Contact
-For questions or support, contact [Kennedy Owusu](mailto:ken21@gmail.com).
+For questions or support, contact [Kennedy Owusu](mailto:kennediowusu).
