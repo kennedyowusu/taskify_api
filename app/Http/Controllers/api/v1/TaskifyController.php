@@ -27,7 +27,9 @@ class TaskifyController extends Controller
         $perPage = request('per_page', 10);
         $tasks = Auth::user()->tasks()->paginate($perPage);
 
-        return ApiResponse::success(TaskifyResource::collection($tasks), 'Tasks retrieved successfully.');
+        $message = $tasks->isEmpty() ? 'No tasks found. Start by creating your first task!' : 'Tasks retrieved successfully.';
+
+        return ApiResponse::success(TaskifyResource::collection($tasks), $message);
     }
 
     public function store(StoreTaskifyRequest $request)
